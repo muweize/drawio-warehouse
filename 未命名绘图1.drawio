@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-03T01:32:58.033Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.95 Safari/537.36" etag="KE0S2cuMOmpTbId0Zjsx" version="21.5.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-07-04T02:30:35.875Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.95 Safari/537.36" etag="Nbxdo-oQyUpbC8IPpOYP" version="21.5.2" type="github" pages="3">
   <diagram name="第 1 页" id="7pWto_vcaeSZzWwDHPbp">
     <mxGraphModel dx="1434" dy="755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -42,14 +42,52 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="D5A24Waz4yaZxe3cCm5b-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="D5A24Waz4yaZxe3cCm5b-1" target="D5A24Waz4yaZxe3cCm5b-2">
+        <mxCell id="D5A24Waz4yaZxe3cCm5b-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="D5A24Waz4yaZxe3cCm5b-1" target="D5A24Waz4yaZxe3cCm5b-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="D5A24Waz4yaZxe3cCm5b-1" value="FmcTspSrvL2PriNwInit&lt;br&gt;include &lt;br&gt;1. cache init&lt;br&gt;2. tx and rx evnet&lt;br&gt;3. FmcTspSrvL2ThreadInit：&lt;br&gt;Tx 线程&lt;br&gt;Rx 线程&lt;br&gt;RxAnly 线程" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="D5A24Waz4yaZxe3cCm5b-1" value="FmcTspSrvL2PriNwInit&lt;br&gt;include &lt;br&gt;1. cache init&lt;br&gt;2. tx and rx evnet&lt;br&gt;3. FmcTspSrvL2ThreadInit：&lt;br&gt;Tx 线程&lt;br&gt;Rx 线程&lt;br&gt;RxAnly 线程" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="150" y="40" width="160" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="D5A24Waz4yaZxe3cCm5b-2" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="D5A24Waz4yaZxe3cCm5b-2" value="" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="170" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="YH762QtV4ITrsC7mpaRx" name="实时数据">
+    <mxGraphModel dx="794" dy="395" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kGwEzmzajvitgI9vKkf6-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kGwEzmzajvitgI9vKkf6-1" target="kGwEzmzajvitgI9vKkf6-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kGwEzmzajvitgI9vKkf6-1" value="主线程接收实时数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kGwEzmzajvitgI9vKkf6-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kGwEzmzajvitgI9vKkf6-4" target="kGwEzmzajvitgI9vKkf6-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kGwEzmzajvitgI9vKkf6-4" value="判断是否有数据" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="210" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kGwEzmzajvitgI9vKkf6-7" value="根据协议一步一步解析判断的" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="110" y="180" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="kGwEzmzajvitgI9vKkf6-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kGwEzmzajvitgI9vKkf6-10" target="kGwEzmzajvitgI9vKkf6-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kGwEzmzajvitgI9vKkf6-10" value="存入A1-A8缓存" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kGwEzmzajvitgI9vKkf6-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kGwEzmzajvitgI9vKkf6-12" target="kGwEzmzajvitgI9vKkf6-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kGwEzmzajvitgI9vKkf6-12" value="解析后存放到发送tsp缓存" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kGwEzmzajvitgI9vKkf6-16" value="通知实时数据线程处理" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="660" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
